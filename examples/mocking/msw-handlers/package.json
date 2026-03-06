@@ -1,0 +1,13 @@
+{
+  "name": "testing-craft-msw-handlers",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "msw": "^2.6.0",
+    "typescript": "^5.4.0",
+    "vitest": "^2.1.0"
+  }
+}
