@@ -38,6 +38,8 @@ describe('clamp', () => {
 })
 ```
 
+**Example:** `examples/unit/pure-functions/`
+
 ### Mocking Modules [P0]
 
 Replace dependencies to isolate the unit under test.
@@ -76,6 +78,8 @@ describe('getUser', () => {
   })
 })
 ```
+
+**Example:** `examples/unit/mocking/`
 
 ### Testing Async Code [P0]
 
@@ -121,6 +125,8 @@ it('resolves all in parallel', async () => {
 })
 ```
 
+**Example:** `examples/unit/async-testing/`
+
 ### Testing Error Paths [P0]
 
 Verify error handling, not just happy paths.
@@ -145,6 +151,8 @@ describe('parseConfig', () => {
   })
 })
 ```
+
+**Example:** `examples/unit/error-paths/`
 
 ---
 
@@ -193,6 +201,8 @@ describe('GET /api/users', () => {
   })
 })
 ```
+
+**Example:** `examples/integration/supertest-api/`
 
 ### Testcontainers Database Testing [P1]
 
@@ -394,6 +404,8 @@ afterEach(() => server.resetHandlers())
 afterAll(() => server.close())
 ```
 
+**Example:** `examples/mocking/msw-handlers/`
+
 ### Factory Patterns with Fishery [P0]
 
 ```ts
@@ -429,6 +441,8 @@ const post = postFactory.build({}, {
   associations: { author: userFactory.build({ name: 'Alice' }) },
 })
 ```
+
+**Example:** `examples/mocking/factories/`
 
 ### Snapshot Testing [P1]
 
@@ -510,6 +524,8 @@ export default defineConfig({
 npx vitest run --coverage
 # Outputs text table + fails with exit code 1 if thresholds not met
 ```
+
+**Example:** `examples/coverage/vitest-coverage/`
 
 ### Coverage Anti-Patterns
 
