@@ -1,0 +1,63 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`buildDbConfig > generates default config when no env vars are set 1`] = `
+{
+  "database": "app_dev",
+  "host": "localhost",
+  "migrations": {
+    "directory": "./migrations",
+    "tableName": "schema_migrations",
+  },
+  "password": "",
+  "pool": {
+    "idleTimeoutMs": 30000,
+    "max": 10,
+    "min": 2,
+  },
+  "port": 5432,
+  "ssl": false,
+  "user": "postgres",
+}
+`;
+
+exports[`buildDbConfig > generates production config from env vars 1`] = `
+{
+  "database": "app_prod",
+  "host": "db.prod.internal",
+  "migrations": {
+    "directory": "./migrations",
+    "tableName": "schema_migrations",
+  },
+  "password": "secret",
+  "pool": {
+    "idleTimeoutMs": 30000,
+    "max": 20,
+    "min": 5,
+  },
+  "port": 5433,
+  "ssl": true,
+  "user": "app_service",
+}
+`;
+
+exports[`describeHttpError > describes status 200 1`] = `"Success"`;
+
+exports[`describeHttpError > describes status 400 1`] = `"Bad Request: the server could not understand your request"`;
+
+exports[`describeHttpError > describes status 401 1`] = `"Unauthorized: authentication is required"`;
+
+exports[`describeHttpError > describes status 403 1`] = `"Forbidden: you do not have permission to access this resource"`;
+
+exports[`describeHttpError > describes status 404 1`] = `"Not Found: the requested resource does not exist"`;
+
+exports[`describeHttpError > describes status 409 1`] = `"Conflict: the request conflicts with the current state"`;
+
+exports[`describeHttpError > describes status 422 1`] = `"Unprocessable Entity: the request was well-formed but invalid"`;
+
+exports[`describeHttpError > describes status 429 1`] = `"Too Many Requests: you have exceeded the rate limit"`;
+
+exports[`describeHttpError > describes status 500 1`] = `"Server Error (500): an internal error occurred"`;
+
+exports[`describeHttpError > describes status 503 1`] = `"Server Error (503): an internal error occurred"`;
+
+exports[`describeHttpError > describes status 999 1`] = `"Unexpected status 999"`;

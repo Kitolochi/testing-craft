@@ -1,0 +1,13 @@
+{
+  "name": "testing-craft-snapshot-testing",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "vitest run",
+    "test:update": "vitest run --update"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "vitest": "^2.1.0"
+  }
+}
