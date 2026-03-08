@@ -1,0 +1,15 @@
+{
+  "name": "testing-craft-k6-load-test",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "server": "node server.js",
+    "test:smoke": "k6 run --env SCENARIO=smoke load-test.js",
+    "test:load": "k6 run --env SCENARIO=load load-test.js",
+    "test:stress": "k6 run --env SCENARIO=stress load-test.js",
+    "test:spike": "k6 run --env SCENARIO=spike load-test.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
