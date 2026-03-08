@@ -1,0 +1,16 @@
+{
+  "name": "testing-craft-accessibility-testing",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "vitest run",
+    "test:a11y": "npx playwright test"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.8.0",
+    "@playwright/test": "^1.45.0",
+    "typescript": "^5.4.0",
+    "vitest": "^2.1.0",
+    "axe-core": "^4.9.0"
+  }
+}
