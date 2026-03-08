@@ -1,0 +1,15 @@
+{
+  "name": "testing-craft-vitest-screenshots",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "vitest run",
+    "test:browser": "vitest run --browser.enabled"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "vitest": "^2.1.0",
+    "@vitest/browser": "^2.1.0",
+    "playwright": "^1.45.0"
+  }
+}
